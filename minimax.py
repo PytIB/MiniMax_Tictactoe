@@ -138,32 +138,24 @@ def check_win():
 
     counter = 0
     if sum(board[0]) == 3 or sum(board[1]) == 3 or sum(board[2])  == 3:
-        game_over = True
         return 1
     if sum(board[0]) == -3 or sum(board[1]) == -3 or sum(board[2] ) == -3:
-        game_over = True
         return -1
     if board[0][0] + board[1][1] + board[2][2] == 3 or board[0][2] + board[1][1] + board[2][0] == 3:
-        game_over = True
         return 1
     if board[0][0] + board[1][1] + board[2][2] == -3 or board[0][2] + board[1][1] + board[2][0] == -3:
-        game_over = True
         return -1
     if board[0][0] + board[1][1] + board[2][2] == -3:
-        game_over = True
         return 1
     for i in range(3):
         
         if sum(([row[i] for row in board])) == 3:
-            game_over = True
             return 1
         if sum(([row[i] for row in board])) == -3:
-            game_over = True
             return -1
         if 0 not in board[i]:
             counter += 1 
     if counter == 3:
-        game_over = True
         return 0 
 
 
