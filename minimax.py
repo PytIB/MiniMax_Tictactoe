@@ -14,9 +14,9 @@ who_won = 0
 #[[0,0,-1],[-1,1,1],[1,0,-1]]
 board = [[0,0,0],[0,0,0],[0,0,0]]
 game_over = False
-img_X = pygame.image.load("X.png")
+img_X = pygame.image.load("MiniMax_Tictactoe/X.png")
 img_X = pygame.transform.scale(img_X,(200,200))
-img_O = pygame.image.load("O.png")
+img_O = pygame.image.load("MiniMax_Tictactoe/O.png")
 img_O = pygame.transform.scale(img_O,(200,200))
 font = pygame.font.Font('freesansbold.ttf', 32)
 text1 = font.render("X WINS",False,("RED"),(0,0,0))
